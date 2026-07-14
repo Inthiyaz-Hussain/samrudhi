@@ -54,7 +54,7 @@ export default function AdminDashboard() {
         setToken(savedToken)
         loadData(savedToken)
       } else {
-        navigate('/admin/login')
+        navigate('admin/login')
       }
     }
     checkAuth()
@@ -96,7 +96,7 @@ export default function AdminDashboard() {
         console.warn('Supabase signout error:', err)
       }
     }
-    navigate('/admin/login')
+    navigate('admin/login')
   }
 
   const showFeedback = (type, text) => {
